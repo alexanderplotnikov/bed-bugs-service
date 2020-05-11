@@ -1,5 +1,5 @@
 (function component() {
-  
-    console.log("bundle!");
+    renderTemplate();
+    renderHome();
 })();
   

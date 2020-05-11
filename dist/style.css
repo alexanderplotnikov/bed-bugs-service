@@ -1,0 +1,45 @@
+html, body{ 
+    font-size: 100%;
+    height: 100%;
+}
+body{
+    font-size: 1em;
+}
+#content{
+    height: 100%;
+}
+.wrapper{
+    height: 100%;
+}
+/*Navigation/menu*/
+.navbar{
+    display: flex;
+    height: 10em;
+    background-color: rgb(105, 43, 43);
+}
+.logo{
+
+}
+.menu > ul{
+    display: flex;
+}
+
+/*Main content*/
+
+
+.mainContent{
+    
+
+}
+.homePage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+/*Footer*/
+footer{
+    height: 50px;
+    margin-top: -50px;
+    background-color: rgb(189, 121, 121);
+}

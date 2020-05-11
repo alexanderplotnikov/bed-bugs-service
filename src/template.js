@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Bed Bug and Beyond</title>
-</head>
-<body>
-    <div id="content">
+export function renderTemplate() {
+    const  
+}
+
+
+/*
         <div class="wrapper">
             <header class = "navbar">
                 <div class = "logo">
@@ -40,8 +35,6 @@
             <div>
                 &copy; 2020 Bed Bugs and Beyond
             </div>
-        </footer>
-    </div>
-</body>
-<script src="main.js"></script>
-</html>
+        </footer> 
+
+ */
