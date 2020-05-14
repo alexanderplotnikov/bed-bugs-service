@@ -1,2 +1,2 @@
-# restaurant
-Restaurant page/brochure with menu's and contact info 
+# Bed Bugs Service page
+Bed Bugs Service page/brochure with services and contact info 
