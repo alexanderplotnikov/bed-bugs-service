@@ -6,84 +6,135 @@ body{
     font-size: 1em;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 #content{
     height: 100%;
 }
 .wrapper{
-    height: 100%;
+    background-color: #c7bdbd;
+    min-height: 100%;
 }
-/*Navigation/menu*/
-.navbar{
-    display: flex;
-    position: relative;
-    height: 10em;
-    background-color: #dfbe05;
-    justify-content: space-between;
-    color: #1d3360;
-    -webkit-box-shadow: 0px -11px 30px 6px rgba(0,0,0,1);
-    -moz-box-shadow: 0px -11px 30px 6px rgba(0,0,0,1);
-    box-shadow: 0px -11px 30px 6px rgba(0,0,0,1);
+
+
+@media (min-width: 300px){
+    .navbar{
+        display: grid;
+        justify-content: center;
+        position: relative;
+        height: 10em;
+        background-color: #dfbe05;
+        color: #1d3360;
+        -webkit-box-shadow: 0px -11px 30px 6px rgba(0,0,0,1);
+        -moz-box-shadow: 0px -11px 30px 6px rgba(0,0,0,1);
+        box-shadow: 0px -20px 30px 6px rgba(0,0,0,1);
+    }
+
+    .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 1.75em;
+        font-weight: 600;    
+    }
+    .logo > p{
+        display: none;
+    }
+    .logoImg{
+        width: 100px;
+        margin: 0 auto;
+    }
+    /*Navigation/menu*/
+    .menu{
+        align-self: flex-end;
+    }
+    .menu > ul{
+        display: flex;
+        margin-bottom: auto;  
+        font-size: 1.5em;  
+        margin-bottom: 0.5em;  
+    }
+    li{
+        cursor: pointer;
+        padding: 0.5em;
+        border-top-right-radius: 0.75em;
+        border-top-left-radius: 0.75em;
+    
+    }
+    .mainContent{
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 5em;
+    }
+    
 }
-.logo{
-    width: 60%;
-    display: flex;
-    align-items: center;
+@media (min-width: 1000px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 60%;
+    }
+    .logo > p{
+        display: block;
+    }
+    .logoImg{
+       width: 150px;
+       margin: 0;
+    }
+    .menu{
+        padding-right: 5em;
+    }
+    .mainContent{
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+    .servicesPage, .contactPage{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/*Media query exempt*/
+/*Main content*/
+h1{
     font-size: 1.5em;
-    
+    padding-bottom: 0.5em;
 }
-.logoImg{
-   width: 150px;
+section, aside{
+    padding: 0 5em;
+    margin-top: 4em;
 }
-.menu{
-    align-self: flex-end;
-}
-.menu > ul{
-    display: flex;
-    margin-bottom: auto;  
-    font-size: 1.5em;  
-    padding-right: 4em;
-    margin-bottom: 0.5em;
-}
-li{
-    
-    cursor: pointer;
+
+td{
+    text-align: left;
     padding: 0.5em;
-    border-top-right-radius: 0.75em;
-    border-top-left-radius: 0.75em;
-    
 }
 li:hover{
     color: #df5027;
     padding-bottom: 0;
-  
 }
 .active{
     color: #df5027;
     padding-bottom: 0;
     border-bottom: solid 2px #df5027;
 }
-/*Main content*/
 
-article{
-    background-color: #c7bdbd;
-    height: calc(100% - 200px);
-    
-      
-}
-.mainContent{
-    padding-top: 5em;  
-}
-.homePage{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-}
 /*Footer*/
 footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     margin-top: -50px;
-    background-color: rgb(189, 121, 121);
+    background-color: rgb(107, 106, 106);
 }
+
